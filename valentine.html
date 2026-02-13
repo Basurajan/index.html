@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For My Putti ❤️</title>
+
+
+<style>
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden;
+}
+
+
+.box {
+  background: white;
+  padding: 35px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+  animation: fadeIn 2s ease;
+}
+
+
+h1 {
+  color: #ff4d6d;
+}
+
+
+h2 {
+  margin-bottom: 25px;
+}
+
+
+button {
+  padding: 12px 28px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+
+#yes {
+  background: #ff4d6d;
+  color: white;
+  margin-right: 15px;
+}
+
+
+#no {
+  background: #555;
+  color: white;
+  position: absolute;
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+</style>
+</head>
+
+
+<body>
+
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="https://www.bensound.com/bensound-music/bensound-love.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="box">
+  <h1>Putti ❤️</h1>
+  <h2>Will you be my Valentine? 💘</h2>
+
+
+  <button id="yes" onclick="yesClicked()">Yes 💕</button>
+  <button id="no" onmouseover="moveNo()">No 😜</button>
+</div>
+
+
+<script>
+function moveNo() {
+  const noBtn = document.getElementById("no");
+  const x = Math.random() * (window.innerWidth - 120);
+  const y = Math.random() * (window.innerHeight - 60);
+  noBtn.style.left = x + "px";
+  noBtn.style.top = y + "px";
+}
+
+
+function yesClicked() {
+  document.body.innerHTML = `
+    <div style="
+      color:white;
+      text-align:center;
+      padding:40px;
+      font-size:20px;
+      line-height:1.6;
+      animation: fadeIn 2s ease;
+    ">
+      <h1>❤️ My Dearest Putti ❤️</h1>
+
+
+      <p>
+        Hello Putti,<br><br>
+
+
+        Thank you so much for choosing <b>YES</b> 🥹❤️  
+        I don’t know how many years of good karma I must have earned to get you, Putti.  
+        I am truly the most blessed person in this world to receive your love.
+        <br><br>
+
+
+        I don’t pray for anything more precious than this.  
+        I only pray to God to give me strength, energy, and stability in life  
+        so that I can always take care of my Putti and keep you happy.
+        <br><br>
+
+
+        I will always try my absolute best to make you smile.  
+        And if ever I make any mistakes, please forgive me, Putti.
+        <br><br>
+
+
+        <b>I love you so much, my Putti Chinnima 😘❤️</b><br>
+        I just want to hug you tightly forever 🥹🤗
+      </p>
+
+
+      <h2>— Yours always,<br>Mr. Basavaraj ❤️</h2>
+    </div>
+  `;
+}
+</script>
+
+
+</body>
+</html>
